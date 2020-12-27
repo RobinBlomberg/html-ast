@@ -1,6 +1,6 @@
 {
   "name": "@robinblomberg/html-ast",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Robin Blomberg",
   "type": "module",
   "main": "lib/index.js",
