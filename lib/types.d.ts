@@ -125,4 +125,12 @@ export { _var as var };
 export const video: AST.ElementFactory;
 export const wbr: AST.ElementFactory;
 
+export const TagNames: AST.TagName[];
+
+export const TagNameSet: Set<AST.TagName>;
+
+export const VoidTagNames: AST.TagName[];
+
+export const VoidTagNameSet: Set<AST.TagName>;
+
 export { AST };
