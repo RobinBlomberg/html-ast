@@ -2,6 +2,8 @@ import * as AST from './ast.js';
 
 const _var: AST.ElementFactory;
 
+export { AST };
+
 export const document: (childNodes?: AST.DocumentChildNode[]) => AST.Document;
 
 export const doctype: (name?: string, publicId?: string, systemId?: string) => AST.DocumentType;
@@ -132,5 +134,3 @@ export const TagNameSet: Set<AST.TagName>;
 export const VoidTagNames: AST.TagName[];
 
 export const VoidTagNameSet: Set<AST.TagName>;
-
-export { AST };
