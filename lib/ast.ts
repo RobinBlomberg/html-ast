@@ -155,6 +155,12 @@ export type Element = {
   childNodes: ElementChildNode[];
 };
 
+export type Node =
+  | Document
+  | DocumentType
+  | Element
+  | Text;
+
 export type Text = {
   type: 'Text';
   data: string;
