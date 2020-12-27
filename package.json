@@ -1,0 +1,37 @@
+{
+  "name": "@robinblomberg/html-ast",
+  "version": "0.1.0",
+  "author": "Robin Blomberg",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinBlomberg/html-ast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RobinBlomberg/html-ast/issues"
+  },
+  "homepage": "https://github.com/RobinBlomberg/html-ast",
+  "devDependencies": {
+    "@robinblomberg/eslint-config-robinblomberg": "^0.2.26",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "c8": "^7.3.5",
+    "chai": "^4.2.0",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.15.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "check": "tsc",
+    "coverage": "c8 --report-dir .coverage --temp-directory .coverage/tmp npm test",
+    "coverage:html": "c8 --report-dir .coverage --reporter=html --temp-directory .coverage/tmp npm test",
+    "lint": "eslint **/*.{js,ts}",
+    "lint:fix": "eslint **/*.{js,ts} --fix",
+    "test": "mocha ./{,!(node_modules)/**}**.test.js --reporter min",
+    "test:dev": "mocha ./{,!(node_modules)/**}**.test.js --parallel --reporter min --watch"
+  }
+}
